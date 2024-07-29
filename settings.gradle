@@ -1,0 +1,12 @@
+rootProject.name = 'project-manager-api'
+include 'application:app-service'
+findProject(':application:app-service')?.name = 'app-service'
+include 'domain:model'
+findProject(':domain:model')?.name = 'model'
+include 'domain:usecase'
+findProject(':domain:usecase')?.name = 'usecase'
+include 'infrastructure:driven-adapters:jpa-repository'
+findProject(':infrastructure:driven-adapters:jpa-repository')?.name = 'jpa-repository'
+include 'infrastructure:entry-points:api-rest'
+findProject(':infrastructure:entry-points:api-rest')?.name = 'api-rest'
+

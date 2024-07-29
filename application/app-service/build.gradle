@@ -1,0 +1,6 @@
+dependencies {
+    implementation project(path: ':domain:model')
+    implementation project(path: ':domain:usecase')
+    implementation project(path: ':infrastructure:driven-adapters:jpa-repository')
+    implementation project(path: ':infrastructure:entry-points:api-rest')
+}
